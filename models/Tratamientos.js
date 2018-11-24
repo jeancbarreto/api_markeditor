@@ -27,6 +27,9 @@ const Tratamiento = new Schema({
     },
     Ruta: {
         type: String
+    },
+    Icon: {
+      type: String
     }
 });
 
