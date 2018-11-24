@@ -51,6 +51,8 @@ app.use('/api/v1/tratamientos', require('./routes/Tratamientos'));
 app.use('/api/v1/sesiones', require('./routes/Sesiones'));
 app.use('/api/v1/roles', require('./routes/Roles'));
 app.use('/api/v1/discapacidades', require('./routes/Discapacidades'));
+app.use('/api/v1/tratamientos_usuarios', require('./routes/Tratamientos_usuarios'));
+app.use('/api/v1/musica_tratamiento', require('./routes/Musica_tratamiento'));
 
 // Server in listening
 app.listen(app.get('port'), () => {
