@@ -16,7 +16,7 @@ router
     })
 
     .get('/all', async (req, res) => {
-        const houses = await Tratamientos.find();
+        const houses = await Musica_tratamiento.find();
         res.json(houses);
     })
 
