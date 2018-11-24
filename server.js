@@ -46,6 +46,11 @@ app.use('/api/v1/auth', AuthController);
 app.use('/api/v1/houses', require('./routes/Houses'));
 app.use('/api/v1/reservations', require('./routes/Reservations'));
 app.use('/api/v1/projects', require('./routes/Projects'));
+app.use('/api/v1/usuarios', require('./routes/Usuarios'));
+app.use('/api/v1/tratamientos', require('./routes/Tratamientos'));
+app.use('/api/v1/sesiones', require('./routes/Sesiones'));
+app.use('/api/v1/roles', require('./routes/Roles'));
+app.use('/api/v1/discapacidades', require('./routes/Discapacidades'));
 
 // Server in listening
 app.listen(app.get('port'), () => {

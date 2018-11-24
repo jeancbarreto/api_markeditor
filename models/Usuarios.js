@@ -9,12 +9,12 @@ const {
     Schema
 } = mongoose;
 
-const Users = new Schema({
+const Usuarios = new Schema({
     Id: {
       type: Number
     },
     Nombre: {
-        type: Number
+        type: String
     },
     Apellido: {
         type: String
@@ -39,4 +39,4 @@ const Users = new Schema({
     }
 });
 
-module.exports = mongoose.model("Users", Users);
+module.exports = mongoose.model("Usuarios", Usuarios);
