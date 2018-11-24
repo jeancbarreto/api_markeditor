@@ -24,6 +24,10 @@ router
         const house = await Musica_tratamiento.findById(req.params.id);
         res.json(house);
     })
+    .get('/type/:type', async (req, res) => {
+        const house = await Musica_tratamiento.find({Type: req.params.type});
+        res.json(house);
+    })
 
     .put('/:id', async (req, res) => {
         await Musica_tratamiento.findByIdAndUpdate(req.params.id, req.body);
