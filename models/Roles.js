@@ -19,6 +19,9 @@ const Roles = new Schema({
     Estado: {
         type: String
     },
+    Type: {
+      type: Number
+    },
     Fecha_creacion: {
         type: String
     }
