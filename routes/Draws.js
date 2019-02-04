@@ -24,13 +24,9 @@ router
   })
 
   .get("/:name", async (req, res) => {
-    await Draw.findOne({ name: req.params.name }, function(err, draw) {
-      if (err) {
-        return handledError(err);
-      } else {
-        res.json(draw);
-        console.log(draw);
-      }
+    Draw.findbyname(req.params.name, function(err, draw) {
+      if (err) return handledError(err);
+      res.json(draw);
     });
     //console.log(req.params.name);
     //console.log(res.json(Dibujo));

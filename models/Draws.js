@@ -7,7 +7,7 @@ let timeVal = moment()
 const { Schema } = mongoose;
 
 const Draw = new Schema({
-  Draw: {
+  Plano: {
     name: {
       type: String
     },
@@ -20,14 +20,8 @@ const Draw = new Schema({
   }
 });
 
-exports.name = function(req, res, next) {
-  //query with mongoose
-  var query = Schema.Draw.find({ name: req.params.name });
-
-  query.exec(function(err, someValue) {
-    if (err) return next(err);
-    res.send(someValue);
-  });
+Draw.statics.findbyname = function(name, cb) {
+  return this.find({ "Plano.name": new RegExp(name, "i") }, cb);
 };
 
 module.exports = mongoose.model("Draw", Draw);
