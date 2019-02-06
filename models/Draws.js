@@ -14,9 +14,15 @@ const Draw = new Schema({
     type_plan: {
       type: String
     },
-    objetos: {
-      type: Array
-    }
+    objetos: [
+      {
+        tipo: String,
+        dimensiones: {
+          ancho: Number,
+          largo: Number
+        }
+      }
+    ]
   }
 });
 
