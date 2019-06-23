@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-const db = require("./db");
+//const db = require("./db");
 global.__root = __dirname + "/";
 
 app.use(morgan("dev"));
