@@ -1,4 +1,5 @@
-heroku-node
+Se reutilizo esta api para MarkeEditor
 ===========
 
-Code for the tutorial by @sevilayha: Deploying Node Apps to Heroku
+1.- Esta api exponer el guardar y el mostrar datos de los nuevos documentos.
+2.- Muchas gracias.
