@@ -45,8 +45,8 @@ const AuthController = require(__root + "auth/AuthController");
 app.use("/api/v1/auth", AuthController);
 
 // Routes Pages
-app.use("/api/v1/usuarios", require("./routes/Usuarios"));
-app.use("/api/v1/draws", require("./routes/Draws"));
+app.use("/api/v1/document", require("./routes/Archivos"));
+
 
 // Server in listening
 app.listen(app.get("port"), () => {
